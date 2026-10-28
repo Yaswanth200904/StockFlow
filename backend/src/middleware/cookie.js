@@ -2,11 +2,11 @@ import { env } from '../config/env.js';
 import { AUTH_COOKIE } from './auth.js';
 
 export const cookieOptions = {
-  httpOnly: true,
-  secure: env.NODE_ENV === 'production',
-  sameSite: 'strict',
-  path: '/api',
-};
+      httpOnly: true,
+      secure: true,
+      sameSite: 'none',
+      path: '/api',
+    };
 
 export function setSessionCookie(res, token) {
   const claims = JSON.parse(Buffer.from(token.split('.')[1], 'base64url').toString('utf8'));
