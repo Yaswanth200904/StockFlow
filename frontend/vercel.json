@@ -1,6 +1,0 @@
-{
-  "rewrites": [
-    { "source": "/api/:path*", "destination": "https://stockflow-t7ri.onrender.com" },
-    { "source": "/(.*)", "destination": "/index.html" }
-  ]
-}
