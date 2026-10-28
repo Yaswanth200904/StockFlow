@@ -1,0 +1,55 @@
+:root {
+  --sf-green: #1f4d45;
+  --sf-amber: #c98b2b;
+  --bs-primary: #1f4d45;
+  --bs-primary-rgb: 31, 77, 69;
+}
+
+body {
+  min-width: 320px;
+  background: #f7f8f6;
+}
+
+.btn-primary {
+  --bs-btn-bg: var(--sf-green);
+  --bs-btn-border-color: var(--sf-green);
+  --bs-btn-hover-bg: #173c36;
+  --bs-btn-hover-border-color: #173c36;
+}
+
+.sf-sidebar {
+  position: sticky;
+  top: 0;
+  width: 250px;
+  height: 100vh;
+  background: var(--sf-green);
+  color: #fff;
+}
+
+.sf-sidebar .nav-link {
+  color: rgba(255, 255, 255, .8);
+  border-radius: .5rem;
+}
+
+.sf-sidebar .nav-link.active,
+.sf-sidebar .nav-link:hover {
+  color: #fff;
+  background: rgba(255, 255, 255, .14);
+}
+
+.sf-stat {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.sf-card-warn {
+  border-color: #edc7c7;
+}
+
+@media (max-width: 991.98px) {
+  .sf-sidebar {
+    position: fixed;
+    z-index: 1045;
+    height: 100vh;
+  }
+}
