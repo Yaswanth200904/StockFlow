@@ -4,7 +4,7 @@ import { AUTH_COOKIE } from './auth.js';
 export const cookieOptions = {
   httpOnly: true,
   secure: env.NODE_ENV === 'production',
-  sameSite: 'strict',
+  sameSite: 'none',
   path: '/api',
 };
 
