@@ -17,26 +17,35 @@ body {
   --bs-btn-hover-border-color: #173c36;
 }
 
-.sf-sidebar {
-  position: sticky;
-  top: 0;
-  width: 250px;
-  height: 100vh;
-  background: var(--sf-green);
-  color: #fff;
-}
+.sf-sidebar,
+    .sf-sidebar.offcanvas,
+    .sf-sidebar.offcanvas-lg {
+      --bs-offcanvas-bg: #1f4d45 !important;
+      --bs-offcanvas-color: #ffffff !important;
+      background-color: #1f4d45 !important;
+      color: #ffffff !important;
+      position: sticky;
+      top: 0;
+      width: 250px;
+      height: 100vh;
+    }
 
-.sf-sidebar.offcanvas-lg {
-  --bs-offcanvas-bg: var(--sf-green);
-  --bs-offcanvas-color: #fff;
-  background-color: var(--sf-green);
-  color: #fff;
-}
+    .sf-sidebar .offcanvas-body {
+      background-color: #1f4d45 !important;
+      color: #ffffff !important;
+    }
 
-.sf-sidebar .nav-link {
-  color: rgba(255, 255, 255, .8);
-  border-radius: .5rem;
-}
+    .sf-sidebar span,
+    .sf-sidebar .nav-link {
+      color: rgba(255, 255, 255, 0.85) !important;
+      border-radius: 0.5rem;
+    }
+
+    .sf-sidebar .nav-link.active,
+    .sf-sidebar .nav-link:hover {
+      color: #ffffff !important;
+      background-color: rgba(255, 255, 255, 0.18) !important;
+    }
 
 .sf-sidebar .nav-link.active,
 .sf-sidebar .nav-link:hover {
