@@ -26,6 +26,13 @@ body {
   color: #fff;
 }
 
+.sf-sidebar.offcanvas-lg {
+  --bs-offcanvas-bg: var(--sf-green);
+  --bs-offcanvas-color: #fff;
+  background-color: var(--sf-green);
+  color: #fff;
+}
+
 .sf-sidebar .nav-link {
   color: rgba(255, 255, 255, .8);
   border-radius: .5rem;
